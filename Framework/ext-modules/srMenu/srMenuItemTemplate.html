@@ -1,3 +1,8 @@
-﻿<li class="sr-menu-selectable-item">
-    {{label}}
+﻿<li class="sr-selectable-item">
+    <div class="sr-noselect">
+        <i class="fa {{icon}} sr-menu-icon"></i>
+        {{label}}
+    </div>
+    <i class="fa fa-2x fa-caret-left sr-menu-active-indicator" ng-if="isActive()"></i>
+    
 </li>
