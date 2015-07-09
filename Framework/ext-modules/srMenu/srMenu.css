@@ -1,0 +1,44 @@
+﻿.sr-menu-area {
+    position: relative;
+    background-color: #333;
+    color: #ccc;
+    padding-left: 0;
+    width: 200px;
+    min-height: 100vh;
+    padding-top: 30px;
+}
+
+.sr-menu-area .btn:hover {
+    color: #ccc;
+}
+
+.sr-menu-area .btn:hover {
+    color: #ccc;
+}
+
+.sr-menu {
+    list-style-type: none;
+    vertical-align: top;
+}
+
+.sr-menu ul {
+    display: inline;
+    list-style-type: none;
+}
+
+.sr-menu li {
+    line-height: 3em;
+    cursor: pointer;
+}
+
+.sr-selectable-item:hover {
+    background-color: #555;
+}
+
+.sr-noselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
