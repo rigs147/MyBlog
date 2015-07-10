@@ -1,46 +1,60 @@
 ﻿<!DOCTYPE html>
 <html ng-app="app">
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-        <title>My Travels</title>
-        <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-        <link href="Content/bootstrap.min.css" rel="stylesheet" />
-        <link href="Content/font-awesome.min.css" rel="stylesheet" />
-        <link href="app/app.css" rel="stylesheet" />
-        <link href="ext-modules/srMyBlog/srMyBlog.css" rel="stylesheet" />
-        <link href="ext-modules/srMenu/srMenu.css" rel="stylesheet" />
-    </head>
-    <body class="container-fluid">
-        
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>My Travels</title>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="Content/font-awesome.min.css" rel="stylesheet" />
+    <link href="app/app.css" rel="stylesheet" />
+    <link href="ext-modules/srMyBlog/srMyBlog.css" rel="stylesheet" />
+    <link href="ext-modules/srMenu/srMenu.css" rel="stylesheet" />
+</head>
+<body class="container-fluid">
 
-        <sr-my-blog title="Sean's Journey"
-                    subtitle="Photo app"
-                    icon-file="images/sean.png">
-            <sr-menu>
-                <sr-menu-item label="Dashboard" icon="fa-tachometer" route="dashboard"></sr-menu-item>
-                <sr-menu-item label="Photos" icon="fa-camera" route="photos"></sr-menu-item>
-                <sr-menu-item label="Best Places" icon="fa-globe" route="locations"></sr-menu-item>
-            </sr-menu>
-        </sr-my-blog>
 
-        
+    <sr-my-blog title="Sean's Journey"
+                subtitle="Photo app"
+                icon-file="images/sean.png">
+        <sr-menu>
+            <sr-menu-item label="Dashboard" icon="fa-tachometer" route="dashboard"></sr-menu-item>
+            <!--<sr-menu-item label="Photos" icon="fa-camera" route="photos"></sr-menu-item>-->
+            <sr-menu-item label="Best Locations" icon="fa-globe" route="locations"></sr-menu-item>
+            <sr-menu-group label="Photos" icon="fa-camera" route="">
+                <!--<sr-menu-item label="Asia" icon="fa-globe" route="Asia"></sr-menu-item>-->
+                
+                <sr-menu-group label="Asia" icon="fa-globe" route="">
+                    <sr-menu-item label="Thailand" icon="fa-flag" route="Thailand"></sr-menu-item>
+                    <sr-menu-item label="Vietnam" icon="fa-flag" route="Vietnam"></sr-menu-item>
+                    <sr-menu-item label="Malaysia" icon="fa-flag" route="Malaysia"></sr-menu-item>
+                </sr-menu-group>
 
-        <script src="Scripts/jquery-2.1.4.min.js"></script>
-        <script src="Scripts/angular.min.js"></script>
-    
+                <sr-menu-item label="Europe" icon="fa-flag" route="Europe"></sr-menu-item>
+                <sr-menu-item label="North America" icon="fa-flag" route="America"></sr-menu-item>
+            </sr-menu-group>
+        </sr-menu>
+    </sr-my-blog>
 
-        <script src="ext-modules/srMenu/srMenuModule.js"></script>
-        <script src="ext-modules/srMenu/srMenuController.js"></script>
-        <script src="ext-modules/srMenu/srMenuDirective.js"></script>
-        <script src="ext-modules/srMenu/srMenuItemDirective.js"></script>
 
-        <script src="ext-modules/srDashboard/srDashboardModule.js"></script>
-        
 
-        <script src="ext-modules/srMyBlog/srMyBlogModule.js"></script>
-        <script src="ext-modules/srMyBlog/srMyBlogController.js"></script>
-        <script src="ext-modules/srMyBlog/srMyBlogDirective.js"></script>
-        <script src="app/appModule.js"></script>
+    <script src="Scripts/jquery-2.1.4.min.js"></script>
+    <script src="Scripts/angular.min.js"></script>
 
-    </body>
+
+    <script src="ext-modules/srMenu/srMenuModule.js"></script>
+    <script src="ext-modules/srMenu/srMenuController.js"></script>
+    <script src="ext-modules/srMenu/srMenuDirective.js"></script>
+    <script src="ext-modules/srMenu/srMenuItemDirective.js"></script>
+    <script src="ext-modules/srMenu/srMenuGroupDirective.js"></script>
+
+
+    <script src="ext-modules/srDashboard/srDashboardModule.js"></script>
+
+
+    <script src="ext-modules/srMyBlog/srMyBlogModule.js"></script>
+    <script src="ext-modules/srMyBlog/srMyBlogController.js"></script>
+    <script src="ext-modules/srMyBlog/srMyBlogDirective.js"></script>
+    <script src="app/appModule.js"></script>
+
+</body>
 </html>

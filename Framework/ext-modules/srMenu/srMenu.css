@@ -3,9 +3,17 @@
     background-color: #333;
     color: #ccc;
     padding-left: 0;
+}
+
+.sr-menu-area-vertical {
     width: 200px;
     min-height: 100vh;
     padding-top: 30px;
+}
+
+.sr-menu-area-horizontal {
+    width: 100%;
+    height: 40px;
 }
 
 .sr-menu-area ul {
@@ -25,21 +33,21 @@
     vertical-align: top;
 }
 
-.sr-menu ul {
-    display: inline;
-    list-style-type: none;
-}
+    .sr-menu ul {
+        display: inline;
+        list-style-type: none;
+    }
 
-.sr-menu li {
-    line-height: 3em;
-    cursor: pointer;
-}
+    .sr-menu li {
+        line-height: 3em;
+        cursor: pointer;
+    }
 
-.sr-menu li div {
-    display: inline-block;
-    width: 90%;
-    padding-left: 16px;
-}
+        .sr-menu li div {
+            display: inline-block;
+            width: 90%;
+            padding-left: 16px;
+        }
 
 .sr-selectable-item:hover {
     background-color: #555;
@@ -79,3 +87,35 @@
     color: #777;
 }
 
+.sr-group-indicator-left {
+    float: right;
+    color: #ddd;
+    margin-right: 2px;
+    margin-top: 15px;
+}
+
+.sr-subitem-section {
+    padding-left: 16px;
+}
+
+.sr-menu-layout-button {
+    margin: 12px;
+    padding: 2px 8px;
+    color: #bbb;
+    background-color: #333;
+    border: 1px solid #999 !important;
+}
+
+.sr-layout-button-horizontal {
+    position: absolute;
+    top: -6px;
+    right: 10px;
+}
+
+.sr-item-horizontal {
+    display: inline-block !important;
+    width: 165px !important;
+    margin-left: 20px;
+    margin-top: 5px;
+    line-height: 1.5em !important;
+}

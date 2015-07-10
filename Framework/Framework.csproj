@@ -78,6 +78,8 @@
     <Content Include="ext-modules\srMenu\srMenu.css" />
     <Content Include="ext-modules\srMenu\srMenuController.js" />
     <Content Include="ext-modules\srMenu\srMenuDirective.js" />
+    <Content Include="ext-modules\srMenu\srMenuGroupTemplate.html" />
+    <Content Include="ext-modules\srMenu\srMenuGroupDirective.js" />
     <Content Include="ext-modules\srMenu\srMenuItemDirective.js" />
     <Content Include="ext-modules\srMenu\srMenuItemTemplate.html" />
     <Content Include="ext-modules\srMenu\srMenuModule.js" />
