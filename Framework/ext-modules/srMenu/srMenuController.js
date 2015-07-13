@@ -5,6 +5,8 @@
 
         $scope.isVertical = true;
 
+
+
         this.getActiveElement = function () {
             return $scope.activeElement;
         };
@@ -21,15 +23,39 @@
             $rootScope.$broadcast('sr-menu-item-selected-event', { route: route });
         };
 
+        this.setOpenMenuScope = function (scope) {
+            $scope.openMenuScope = scope;
+        };
+
         $scope.$on('sr-menu-show', function (evt, data) {
             $scope.showMenu = data.show;
         });
 
         $scope.toggleMenuOrientation = function () {
+
+            if ($scope.openMenuScope) {
+                $scope.openMenuScope.closeMenu();
+            };
+
             $scope.isVertical = !$scope.isVertical;
 
             $rootScope.$broadcast('sr-menu-orientation-changed-event',
             { isMenuVertical: $scope.isVertical });
         };
+
+        angular.element(document).bind('click', function (e) {
+            if ($scope.openMenuScope && !$scope.isVertical) {
+                if ($(e.target).parent().hasClass('sr-selectable-item'))
+                    return;
+                $scope.$apply(function () {
+                    $scope.openMenuScope.closeMenu();
+                    e.$parent.$parent.closeMenu();
+                    //$rootScope.closeMenu();
+                });
+                e.preventDefault();
+                e.stopPropagation();
+            }
+        });
+
 
     }]);

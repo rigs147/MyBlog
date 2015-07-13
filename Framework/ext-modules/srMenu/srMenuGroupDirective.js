@@ -19,11 +19,23 @@ angular.module('srMenu').directive('srMenuGroup', function() {
 
             scope.clicked = function() {
                 scope.isOpen = !scope.isOpen;
+
+                if (el.parents('.sr-subitem-section').length == 0)
+                    scope.setSubMenuPosition();
+
+                ctrl.setOpenMenuScope(scope);
             };
 
             scope.isVertical = function () {
-                return ctrl.isVertical();
+                return ctrl.isVertical() || el.parents('.sr-subitem-section').length > 0;
             }
+
+            scope.setSubMenuPosition = function() {
+                var pos = el.offset();// offset is a jquery functionthat gives you the left and top css styles
+                $('.sr-subitem-section').css({ 'left': pos.left + 20, 'top': 36 });
+            }
+
+
         }
 
     };

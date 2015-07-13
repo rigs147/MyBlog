@@ -20,7 +20,7 @@ angular.module('srMenu')
                 };
 
                 scope.isVertical = function() {
-                    return ctrl.isVertical();
+                    return ctrl.isVertical() || el.parents('.sr-subitem-section').length > 0;
                 };
 
                 el.on('click', function (evt) {

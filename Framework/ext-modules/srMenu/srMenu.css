@@ -119,3 +119,11 @@
     margin-top: 5px;
     line-height: 1.5em !important;
 }
+
+.sr-popup-menu {
+    position: absolute;
+    z-index: 1000;
+    background-color: #333;
+    width: 200px;
+    padding-left: 0;
+}
