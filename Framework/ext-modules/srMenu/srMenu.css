@@ -127,3 +127,17 @@
     width: 200px;
     padding-left: 0;
 }
+
+.sr-menu-fade-in-animation {
+    -moz-transition: linear all 0.5s;
+    -o-transition: linear all 0.5s;
+    -webkit-transition: linear all 0.5s; 
+    transition: linear all 0.5s;
+}
+
+.sr-menu-fade-in-animation.ng-hide {
+    -moz-opacity: 0;
+    -o-opacity: 0;
+    -webkit-opacity: 0; 
+    opacity: 0;
+}

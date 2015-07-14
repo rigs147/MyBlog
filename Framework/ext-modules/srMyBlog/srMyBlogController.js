@@ -44,8 +44,10 @@ angular.module("srMyBlog").controller("srMyBlogController", ['$scope', '$rootSco
     var broadcastMenuState = function() {
         $rootScope.$broadcast('sr-menu-show',
         {
-            show: $scope.isMenuVisible
-        });
+            show: $scope.isMenuVisible,
+            isVertical: $scope.isMenuVertical,
+            allowHorizontalToggle: !$scope.isMenuButtonVisible
+    });
     };
 
 

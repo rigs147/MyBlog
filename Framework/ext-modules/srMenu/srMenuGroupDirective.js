@@ -1,6 +1,6 @@
 ﻿"use strict";
 
-angular.module('srMenu').directive('srMenuGroup', function() {
+angular.module('srMenu').directive('srMenuGroup', function (srMenuService) {
     return {
         require: '^srMenu',
         transclude: true,
@@ -15,10 +15,14 @@ angular.module('srMenu').directive('srMenuGroup', function() {
 
             scope.closeMenu = function() {
                 scope.isOpen = false;
+                srMenuService.isOpen = false;
             };
 
             scope.clicked = function() {
                 scope.isOpen = !scope.isOpen;
+
+                //todo
+                srMenuService.isOpen = !srMenuService.isOpen;
 
                 if (el.parents('.sr-subitem-section').length == 0)
                     scope.setSubMenuPosition();
