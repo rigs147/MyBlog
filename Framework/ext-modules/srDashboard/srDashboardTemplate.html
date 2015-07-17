@@ -1,0 +1,23 @@
+﻿<div class="sr-dashboard-header">
+    {{title}}
+</div>
+<div gridster="gridsterOpts">
+    <ul>
+        <li gridster-item="item" ng-repeat="item in widgets">
+            <div class="sr-widget-header">
+                <span>{{item.title}}</span>
+                <div class="sr-widget-header-buttons">
+                    <button class="btn btn-default pull-right">
+                        <i class="fa fa-remove"></i>
+                    </button>
+                    <button class="btn btn-default pull-right">
+                        <i class="fa fa-gear"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="sr-widget-body">
+
+            </div>
+        </li>
+    </ul>
+</div>

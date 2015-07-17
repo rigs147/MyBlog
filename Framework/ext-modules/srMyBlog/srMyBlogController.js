@@ -1,6 +1,6 @@
 ﻿"use strict";
 
-angular.module("srMyBlog").controller("srMyBlogController", ['$scope', '$rootScope', '$window', '$timeout', function ($scope, $rootScope, $window, $timeout) {
+angular.module("srMyBlog").controller("srMyBlogController", ['$scope', '$rootScope', '$window', '$timeout', '$location', function ($scope, $rootScope, $window, $timeout, $location) {
 
     $scope.isMenuVisible = true;
     $scope.isMenuButtonVisible = true;
@@ -8,6 +8,7 @@ angular.module("srMyBlog").controller("srMyBlogController", ['$scope', '$rootSco
 
     $scope.$on('sr-menu-item-selected-event', function(evt, data) {
         $scope.routeString = data.route;
+        $location.path(data.route);
         checkWidth();
         broadcastMenuState();
 

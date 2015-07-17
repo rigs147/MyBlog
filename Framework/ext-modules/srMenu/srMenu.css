@@ -6,6 +6,7 @@
 }
 
 .sr-menu-area-vertical {
+    float: left;
     width: 200px;
     min-height: 100vh;
     padding-top: 30px;
@@ -131,13 +132,25 @@
 .sr-menu-fade-in-animation {
     -moz-transition: linear all 0.5s;
     -o-transition: linear all 0.5s;
-    -webkit-transition: linear all 0.5s; 
+    -webkit-transition: linear all 0.5s;
     transition: linear all 0.5s;
 }
 
-.sr-menu-fade-in-animation.ng-hide {
-    -moz-opacity: 0;
-    -o-opacity: 0;
-    -webkit-opacity: 0; 
-    opacity: 0;
+    .sr-menu-fade-in-animation.ng-hide {
+        -moz-opacity: 0;
+        -o-opacity: 0;
+        -webkit-opacity: 0;
+        opacity: 0;
+    }
+
+.sr-view {
+    margin-left: 200px;
+    padding: 20px;
+    background-color: #ccc;
+    min-height: 100vh;
+    overflow: auto;
+}
+
+.sr-view-full-width {
+    margin-left: 0;
 }

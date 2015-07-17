@@ -1,3 +1,3 @@
 ﻿"use strict";
 
-angular.module("app", ["srMyBlog"]);
+angular.module("app", ["srMyBlog", "ngRoute"]);
