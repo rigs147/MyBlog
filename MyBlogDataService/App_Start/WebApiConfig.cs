@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http;
 using System.Web.Http;
-using Microsoft.Owin.Security.OAuth;
+//using Microsoft.Owin.Security.OAuth;
 using Newtonsoft.Json.Serialization;
-using System.Web.Http.Routing;
+//using System.Web.Routing;
 
 namespace MyBlogDataService
 {
@@ -16,7 +16,7 @@ namespace MyBlogDataService
             // Web API configuration and services
             // Configure Web API to use only bearer token authentication.
             config.SuppressDefaultHostAuthentication();
-            config.Filters.Add(new HostAuthenticationFilter(OAuthDefaults.AuthenticationType));
+            //config.Filters.Add(new HostAuthenticationFilter(OAuthDefaults.AuthenticationType));
 
             // Web API routes
             config.MapHttpAttributeRoutes();
@@ -24,9 +24,16 @@ namespace MyBlogDataService
             config.Routes.MapHttpRoute(
                 "PostFormData",
                 "blobs/upload",
-                new { controller = "ImageUpload", action = "PostFormData" }
-                //new { httpMethod = new HttpMethodConstraint(HttpMethod.Post) }
+                new { controller = "Blobs", action = "PostBlobUpload" }
+                //new { httpMethod = new HttpMethodConstraint("Post") }
             );
+
+//            config.Routes.MapHttpRoute(
+//                "Photo",
+//                "Photo",
+//                new { controller = "Blobs", action = "PostBlobUpload" }
+//                //new { httpMethod = new HttpMethodConstraint(HttpMethod.Post) }
+//);
 
             //config.Routes.MapHttpRoute(
             //    "PostBlobUpload",
@@ -38,8 +45,8 @@ namespace MyBlogDataService
             config.Routes.MapHttpRoute(
                 "GetBlobDownload",
                 "blobs/{blobId}/download",
-                new { controller = "Blobs", action = "GetBlobDownload" },
-                new { httpMethod = new HttpMethodConstraint(HttpMethod.Get) }
+                new { controller = "Blobs", action = "GetBlobDownload" }
+                //new { httpMethod = new HttpMethodConstraint(HttpMethod.Get) }
             );
 
             config.Routes.MapHttpRoute(

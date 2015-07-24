@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Web;
 using System.Web.Http;
 using System.Web.Http.Description;
-using System.Web.Mvc;
+
 
 namespace MyBlogDataService.Controllers
 {
@@ -23,7 +23,9 @@ namespace MyBlogDataService.Controllers
         /// </summary>
         /// <returns></returns>
         //[System.Web.Http.HttpPost]
-        [ResponseType(typeof(List<BlobUploadModel>))]
+        //[System.Web.Mvc.ActionName("Photo")]
+        //[ResponseType(typeof(List<BlobUploadModel>))]
+        [HttpPost]
         public async Task<IHttpActionResult> PostBlobUpload()
         {
             try
