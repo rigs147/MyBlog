@@ -1,0 +1,18 @@
+﻿<div class="sb-temperature-widget">
+        
+    <div class="sb-temperature-heading">
+        <img class="sb-temperature-icon" ng-src="images/therm-icon.jpg" alt=""/>
+        <span class="sb-temperature-title">Temp</span>
+    </div>
+    
+    <div class="sb-temperature-body" style="background-image: url(/images/{{selectedLocation.image}})">
+        <div class="sb-temperature-view">
+            <div class="sb-temperature-region-name">
+                {{selectedLocation.name}}
+            </div>
+            <div class="sb-temperature-degrees">
+                {{selectedLocation.temperature}}
+            </div>
+        </div>
+    </div>
+</div>
