@@ -90,6 +90,7 @@
     <Content Include="app\directives\wwaDashboardDirective.js" />
     <Content Include="app\directives\wwaLocationsDirective.js" />
     <Content Include="app\services\dataServices.js" />
+    <Content Include="app\widgets\sbComrade\sbComradeTemplate.html" />
     <Content Include="app\widgets\sbTemperature\sbTemperature.css" />
     <Content Include="app\widgets\sbTemperature\sbTemperatureDirective.js" />
     <Content Include="app\widgets\sbTemperature\sbTemperatureTemplate.html" />
@@ -169,7 +170,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="app\widgets\sbComrade\" />
     <Folder Include="images\" />
   </ItemGroup>
   <PropertyGroup>

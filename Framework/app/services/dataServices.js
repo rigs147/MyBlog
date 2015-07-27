@@ -35,13 +35,15 @@
 
     ];
 
-    var Comrades = [
-        {
-            id: 001,
-            Name: 'Sean Rigney',
-            age: '60',
-            favouriteColour: 'Malachite',
-            favouriteScientist: 'Carl Sagan',
+    var comrades = [
+    {
+        id: 001,
+        Name: 'Sean Rigney',
+        age: '60',
+        favouriteColour: 'Malachite',
+        favouriteScientist: 'Carl Sagan',
+        countryOfBirth: "Ireland",
+        favouriteLocation: 'Vietnam',
             image: 'sean.jpg'
         },
                 {
@@ -50,6 +52,8 @@
                     age: '60',
                     favouriteColour: 'Blue',
                     favouriteScientist: 'Brian Cox',
+                    countryOfBirth: "Ireland",
+                    favouriteLocation: 'Thailand',
                     image: 'eamonn.jpg'
                 },
                         {
@@ -58,6 +62,8 @@
                             age: '60',
                             favouriteColour: 'red',
                             favouriteScientist: 'Neil DeGrasse Tyson',
+                            countryOfBirth: "Ireland",
+                            favouriteLocation: 'Malaysia',
                             image: 'willy.jpg'
                         },
                                 {
@@ -66,8 +72,10 @@
                                     age: '20',
                                     favouriteColour: 'pink',
                                     favouriteScientist: 'Stephen Hawkings',
+                                    countryOfBirth: "Singapore",
+                                    favouriteLocation: 'Singapore',
                                     image: 'sam.jpg'
-                                },
+                                }
 
     ];
 
@@ -87,14 +95,14 @@
     };
 
     var getComrades = function () {
-        return comerades;
+        return comrades;
     };
 
     var getComrade = function (id) {
         return function () {
-            for (var i = 0; i < comerades.length; i++) {
-                if (comerades[i].id === id) {
-                    return comerades[i];
+            for (var i = 0; i < comrades.length; i++) {
+                if (comrades[i].id === id) {
+                    return comrades[i];
                 }
                 return undefined;
             }
@@ -107,6 +115,4 @@
         getComrade: getComrade,
         getComrades: getComrades
     }
-
-
 });
