@@ -89,6 +89,11 @@
     <Content Include="app\appRouteConfig.js" />
     <Content Include="app\directives\wwaDashboardDirective.js" />
     <Content Include="app\directives\wwaLocationsDirective.js" />
+    <Content Include="app\services\dataServices.js" />
+    <Content Include="app\widgets\sbComrade\sbComradeTemplate.html" />
+    <Content Include="app\widgets\sbTemperature\sbTemperature.css" />
+    <Content Include="app\widgets\sbTemperature\sbTemperatureDirective.js" />
+    <Content Include="app\widgets\sbTemperature\sbTemperatureTemplate.html" />
     <Content Include="Content\angular-gridster.min.css" />
     <Content Include="ext-modules\srDashboard\srDashboard.css" />
     <Content Include="ext-modules\srDashboard\srDashboardDirective.js" />
