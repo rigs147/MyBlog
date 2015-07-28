@@ -4,6 +4,7 @@ using System.Linq;
 using System.Net.Http;
 using System.Web.Http;
 //using Microsoft.Owin.Security.OAuth;
+using System.Web.Http.Routing;
 using Newtonsoft.Json.Serialization;
 //using System.Web.Routing;
 
@@ -24,23 +25,9 @@ namespace MyBlogDataService
             config.Routes.MapHttpRoute(
                 "PostFormData",
                 "blobs/upload",
-                new { controller = "Blobs", action = "PostBlobUpload" }
-                //new { httpMethod = new HttpMethodConstraint("Post") }
+                new { controller = "Blobs", action = "PostBlobUpload" },
+                new { httpMethod = new HttpMethodConstraint(HttpMethod.Post) }
             );
-
-//            config.Routes.MapHttpRoute(
-//                "Photo",
-//                "Photo",
-//                new { controller = "Blobs", action = "PostBlobUpload" }
-//                //new { httpMethod = new HttpMethodConstraint(HttpMethod.Post) }
-//);
-
-            //config.Routes.MapHttpRoute(
-            //    "PostBlobUpload",
-            //    "blobs/upload",
-            //    new { controller = "Blobs", action = "PostBlobUpload" },
-            //    new { httpMethod = new HttpMethodConstraint("POST") }
-            //);
 
             config.Routes.MapHttpRoute(
                 "GetBlobDownload",

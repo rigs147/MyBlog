@@ -262,4 +262,3 @@ C:\Users\zadmrigneys\Desktop\AngularSPA\Framework\MyBlogDataService\bin\zh-Hant\
 C:\Users\zadmrigneys\Desktop\AngularSPA\Framework\MyBlogDataService\obj\Debug\ApplicationInsights.config
 C:\Users\zadmrigneys\Desktop\AngularSPA\Framework\MyBlogDataService\obj\Debug\MyBlogDataService.dll
 C:\Users\zadmrigneys\Desktop\AngularSPA\Framework\MyBlogDataService\obj\Debug\MyBlogDataService.pdb
-C:\Users\zadmrigneys\Desktop\AngularSPA\Framework\MyBlogDataService\obj\Debug\MyBlogDataService.csprojResolveAssemblyReference.cache

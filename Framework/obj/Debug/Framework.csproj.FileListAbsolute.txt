@@ -112,3 +112,4 @@ C:\Users\zadmrigneys\Desktop\AngularSPA\Framework\Framework\bin\ko\System.Spatia
 C:\Users\zadmrigneys\Desktop\AngularSPA\Framework\Framework\bin\ru\System.Spatial.resources.dll
 C:\Users\zadmrigneys\Desktop\AngularSPA\Framework\Framework\bin\zh-Hans\System.Spatial.resources.dll
 C:\Users\zadmrigneys\Desktop\AngularSPA\Framework\Framework\bin\zh-Hant\System.Spatial.resources.dll
+C:\Users\zadmrigneys\Desktop\AngularSPA\Framework\Framework\obj\Debug\Framework.csprojResolveAssemblyReference.cache
