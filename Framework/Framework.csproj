@@ -91,6 +91,7 @@
     <Content Include="app\directives\wwaLocationsDirective.js" />
     <Content Include="app\services\dataServices.js" />
     <Content Include="app\widgets\sbComrade\sbComradeTemplate.html" />
+    <Content Include="app\widgets\sbLocation\sbLocationTemplate.html" />
     <Content Include="app\widgets\sbTemperature\sbTemperature.css" />
     <Content Include="app\widgets\sbTemperature\sbTemperatureDirective.js" />
     <Content Include="app\widgets\sbTemperature\sbTemperatureTemplate.html" />
